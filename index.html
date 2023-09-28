@@ -36,42 +36,43 @@
     <section id="game-configuration">
         <ol>
           <li>
-            <article>
+            <article id="player-1-data">
                 <h2>Player 1</h2>
-                <h3>Player Name</h3>
+                <h3 >Player Name</h3>
                 <p class="player-symbol">X</p>
-                <button class="btn btn-alt" id="edit-player1">Edit</button>
+                <button class="btn btn-alt" id="edit-player1" data-playerid="1">Edit</button>
             </article>
         </li>
-          <li><article>
+          <li>
+            <article id="player-2-data">
                 <h2>Player 2</h2>
-                <h3>Player Name</h3>
+                <h3 >Player Name</h3>
                 <p class="player-symbol">O</p>
-                <button class="btn btn-alt" id="edit-player2">Edit</button>
+                <button class="btn btn-alt" id="edit-player2" data-playerid="2">Edit</button>
             </article></li>  
         </ol>
-        <button class="btn">Start New Game</button>
+        <button class="btn" id="start-game-btn">Start New Game</button>
   </section>
 
     <section id="active-game">
         <article id="game-over">
-<h2>You won <span id="winner-name"></span></h2>
+<h2>You won, <span id="winner-name"></span></h2>
 <p>Click "Start New Game", to start a new game!</p>
         </article>
 
 <p>It's your turn <span id="active-player-name">Player</span></p>
         <ol id="game-board">
-            <li class="disabled">X</li>
-            <li class="disabled">O</li>
-            <li class="disabled">X</li>
+            <li data-col="1" data-row="1"></li>
+            <li data-col="2" data-row="1"></li>
+            <li data-col="3" data-row="1"></li>
 
-            <li class="disabled">O</li>
-            <li class="disabled">X</li>
-            <li>6</li>
+            <li data-col="1" data-row="2"></li>
+            <li data-col="2" data-row="2"></li>
+            <li data-col="3" data-row="2"></li>
 
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
+            <li data-col="1" data-row="3"></li>
+            <li data-col="2" data-row="3"></li>
+            <li data-col="3" data-row="3"></li>
         </ol>
     </section>
    </main>
